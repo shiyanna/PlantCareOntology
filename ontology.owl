@@ -17,6 +17,16 @@
 #################################################################
 
 
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#acidity
+
+:acidity rdf:type owl:ObjectProperty ;
+         
+         rdfs:domain :Soil ;
+         
+         rdfs:subPropertyOf :soilProperty .
+
+
+
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty
 
 :plantProperty rdf:type owl:ObjectProperty .
@@ -49,7 +59,9 @@
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty
 
-:soilProperty rdf:type owl:ObjectProperty .
+:soilProperty rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :Soil .
 
 
 
@@ -66,8 +78,6 @@
 
 :acidity rdf:type owl:DatatypeProperty ;
          
-         rdfs:domain :Soil ;
-         
          rdfs:subPropertyOf :soilProperty ;
          
          rdfs:range xsd:integer .
@@ -80,11 +90,21 @@
 
 
 
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerColor
+
+:flowerColor rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :FloweringPlant ;
+             
+             rdfs:subPropertyOf :plantProperty ;
+             
+             rdfs:range xsd:string .
+
+
+
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#height
 
 :height rdf:type owl:DatatypeProperty ;
-        
-        rdfs:domain :Plant ;
         
         rdfs:subPropertyOf :plantProperty ;
         
@@ -136,9 +156,7 @@
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty
 
-:soilProperty rdf:type owl:DatatypeProperty ;
-              
-              rdfs:domain :Soil .
+:soilProperty rdf:type owl:DatatypeProperty .
 
 
 
@@ -155,19 +173,64 @@
 
 :Clay rdf:type owl:Class ;
       
+      rdfs:label "Clay soil"@en ,
+                 "Глинистая почва"@ru ;
+      
       rdfs:subClassOf :Soil .
 
 
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate
 
-:Climate rdf:type owl:Class .
+:Climate rdf:type owl:Class ;
+         
+         rdfs:label "Climate"@en ,
+                    """Климат
+"""@ru ;
+         
+         rdfs:comment "Климатические условия (температура, освещенность, влажность)"@ru .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FloweringPlant
+
+:FloweringPlant rdf:type owl:Class ;
+                
+                rdfs:label "Flowering plant"@en ,
+                           "Цветущее растение"@ru ;
+                
+                rdfs:subClassOf :Plant .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fruit
+
+:Fruit rdf:type owl:Class ;
+       
+       rdfs:label "Fruit of plant"@en ,
+                  "Плод растения"@ru ;
+       
+       rdfs:comment "Плод растения, используемый человеком."@ru .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FruitPlant
+
+:FruitPlant rdf:type owl:Class ;
+            
+            rdfs:label "Fruit plant"@en ,
+                       "Плодоносящее растение"@ru ;
+            
+            rdfs:subClassOf :Plant .
 
 
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gravel
 
 :Gravel rdf:type owl:Class ;
+        
+        rdfs:label "Gravel soil"@en ,
+                   "Гравийная почва"@ru ;
         
         rdfs:subClassOf :Soil .
 
@@ -177,19 +240,28 @@
 
 :Organic rdf:type owl:Class ;
          
+         rdfs:label "Organic soil"@en ,
+                    "Органическая почва"@ru ;
+         
          rdfs:subClassOf :Soil .
 
 
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant
 
-:Plant rdf:type owl:Class .
+:Plant rdf:type owl:Class ;
+       
+       rdfs:label "Plant"@en ,
+                  "Растение"@ru .
 
 
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Sand
 
 :Sand rdf:type owl:Class ;
+      
+      rdfs:label "Sandy soil"@en ,
+                 "Песчанная почва"@ru ;
       
       rdfs:subClassOf :Soil .
 
@@ -199,13 +271,21 @@
 
 :Silt rdf:type owl:Class ;
       
-      rdfs:subClassOf :Soil .
+      rdfs:label "Silt soil"@en ,
+                 "Алевритовая почва"@ru ;
+      
+      rdfs:subClassOf :Soil ;
+      
+      rdfs:comment "Алеврит - рыхлая мелкообломочная осадочная порода."@ru .
 
 
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil
 
-:Soil rdf:type owl:Class .
+:Soil rdf:type owl:Class ;
+      
+      rdfs:label "Soil"@en ,
+                 "Почва"@ru .
 
 
 
