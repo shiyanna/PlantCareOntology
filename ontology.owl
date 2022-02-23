@@ -27,6 +27,18 @@
 
 
 
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#bearsFriut
+
+:bearsFriut rdf:type owl:ObjectProperty ;
+            
+            rdfs:range :Fruit ;
+            
+            rdfs:domain :FruitPlant ;
+            
+            rdfs:subPropertyOf :plantProperty .
+
+
+
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty
 
 :plantProperty rdf:type owl:ObjectProperty .
@@ -90,6 +102,30 @@
 
 
 
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#color
+
+:color rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :Fruit ;
+       
+       rdfs:subPropertyOf :fruitProperty ;
+       
+       rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#edibility
+
+:edibility rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Fruit ;
+           
+           rdfs:subPropertyOf :fruitProperty ;
+           
+           rdfs:range xsd:string .
+
+
+
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerColor
 
 :flowerColor rdf:type owl:DatatypeProperty ;
@@ -99,6 +135,12 @@
              rdfs:subPropertyOf :plantProperty ;
              
              rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty
+
+:fruitProperty rdf:type owl:DatatypeProperty .
 
 
 
@@ -151,6 +193,18 @@
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty
 
 :plantProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#size
+
+:size rdf:type owl:DatatypeProperty ;
+      
+      rdfs:domain :Fruit ;
+      
+      rdfs:subPropertyOf :fruitProperty ;
+      
+      rdfs:range xsd:string .
 
 
 
