@@ -17,63 +17,75 @@
 #################################################################
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#acidity
-
-:acidity rdf:type owl:ObjectProperty ;
-         
-         rdfs:domain :Soil ;
-         
-         rdfs:subPropertyOf :soilProperty .
-
-
-
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#bearsFriut
 
-:bearsFriut rdf:type owl:ObjectProperty ;
+:bearsFriut rdf:type owl:AsymmetricProperty ,
+                     owl:ObjectProperty ;
             
             rdfs:range :Fruit ;
             
-            rdfs:domain :FruitPlant ;
-            
-            rdfs:subPropertyOf :plantProperty .
+            rdfs:domain :FruitPlant .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateSuitableFor
 
-:plantProperty rdf:type owl:ObjectProperty .
+:climateSuitableFor rdf:type owl:AsymmetricProperty ,
+                             owl:ObjectProperty ;
+                    
+                    rdfs:domain :Climate ;
+                    
+                    rdfs:range :Plant ;
+                    
+                    owl:inverseOf :preferClimate .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#growsAt
+
+:growsAt rdf:type owl:AsymmetricProperty ,
+                  owl:ObjectProperty ;
+         
+         rdfs:domain :Fruit ;
+         
+         rdfs:range :FruitPlant ;
+         
+         owl:inverseOf :bearsFriut .
 
 
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#preferClimate
 
-:preferClimate rdf:type owl:ObjectProperty ;
+:preferClimate rdf:type owl:AsymmetricProperty ,
+                        owl:ObjectProperty ;
                
                rdfs:range :Climate ;
                
-               rdfs:domain :Plant ;
-               
-               rdfs:subPropertyOf :plantProperty .
+               rdfs:domain :Plant .
 
 
 
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#preferSoil
 
-:preferSoil rdf:type owl:ObjectProperty ;
+:preferSoil rdf:type owl:AsymmetricProperty ,
+                     owl:ObjectProperty ;
             
             rdfs:domain :Plant ;
             
             rdfs:range :Soil ;
             
-            rdfs:subPropertyOf :plantProperty .
+            owl:inverseOf :soilSuitableFor .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilSuitableFor
 
-:soilProperty rdf:type owl:ObjectProperty ;
-              
-              rdfs:domain :Soil .
+:soilSuitableFor rdf:type owl:AsymmetricProperty ,
+                          owl:ObjectProperty ;
+                 
+                 rdfs:range :Plant ;
+                 
+                 rdfs:domain :Soil .
 
 
 
@@ -86,43 +98,33 @@
 #################################################################
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#acidity
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateLight
 
-:acidity rdf:type owl:DatatypeProperty ;
-         
-         rdfs:subPropertyOf :soilProperty ;
-         
-         rdfs:range xsd:integer .
-
-
-
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateProperty
-
-:climateProperty rdf:type owl:DatatypeProperty .
+:climateLight rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Climate ;
+              
+              rdfs:range xsd:string .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#color
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateMaxTemperature
 
-:color rdf:type owl:DatatypeProperty ;
-       
-       rdfs:domain :Fruit ;
-       
-       rdfs:subPropertyOf :fruitProperty ;
-       
-       rdfs:range xsd:string .
+:climateMaxTemperature rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:domain :Climate ;
+                       
+                       rdfs:range xsd:integer .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#edibility
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateMinTemperature
 
-:edibility rdf:type owl:DatatypeProperty ;
-           
-           rdfs:domain :Fruit ;
-           
-           rdfs:subPropertyOf :fruitProperty ;
-           
-           rdfs:range xsd:string .
+:climateMinTemperature rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:domain :Climate ;
+                       
+                       rdfs:range xsd:integer .
 
 
 
@@ -132,85 +134,67 @@
              
              rdfs:domain :FloweringPlant ;
              
-             rdfs:subPropertyOf :plantProperty ;
-             
              rdfs:range xsd:string .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#floweringSeason
 
-:fruitProperty rdf:type owl:DatatypeProperty .
-
-
-
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#height
-
-:height rdf:type owl:DatatypeProperty ;
-        
-        rdfs:subPropertyOf :plantProperty ;
-        
-        rdfs:range xsd:nonNegativeInteger .
+:floweringSeason rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :FloweringPlant ;
+                 
+                 rdfs:range xsd:string .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#light
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitColor
 
-:light rdf:type owl:DatatypeProperty ;
-       
-       rdfs:domain :Climate ;
-       
-       rdfs:subPropertyOf :climateProperty ;
-       
-       rdfs:range xsd:string .
+:fruitColor rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :Fruit ;
+            
+            rdfs:range xsd:string .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#maxTemperature
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitEdibility
 
-:maxTemperature rdf:type owl:DatatypeProperty ;
+:fruitEdibility rdf:type owl:DatatypeProperty ;
                 
-                rdfs:domain :Climate ;
+                rdfs:domain :Fruit ;
                 
-                rdfs:subPropertyOf :climateProperty ;
-                
-                rdfs:range xsd:integer .
+                rdfs:range xsd:string .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#minTemperature
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitSize
 
-:minTemperature rdf:type owl:DatatypeProperty ;
-                
-                rdfs:domain :Climate ;
-                
-                rdfs:subPropertyOf :climateProperty ;
-                
-                rdfs:range xsd:integer .
+:fruitSize rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Fruit ;
+           
+           rdfs:range xsd:string .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantHeight
 
-:plantProperty rdf:type owl:DatatypeProperty .
-
-
-
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#size
-
-:size rdf:type owl:DatatypeProperty ;
-      
-      rdfs:domain :Fruit ;
-      
-      rdfs:subPropertyOf :fruitProperty ;
-      
-      rdfs:range xsd:string .
+:plantHeight rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Plant ;
+             
+             rdfs:range xsd:nonNegativeInteger .
 
 
 
-###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilAcidity
 
-:soilProperty rdf:type owl:DatatypeProperty .
+:soilAcidity rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Soil ;
+             
+             rdfs:range xsd:integer .
 
 
 
@@ -239,8 +223,7 @@
 :Climate rdf:type owl:Class ;
          
          rdfs:label "Climate"@en ,
-                    """Климат
-"""@ru ;
+                    "Климат"@ru ;
          
          rdfs:comment "Климатические условия (температура, освещенность, влажность)"@ru .
 
