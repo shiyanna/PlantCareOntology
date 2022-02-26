@@ -28,6 +28,19 @@
 
 
 
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#careSuitableFor
+
+:careSuitableFor rdf:type owl:AsymmetricProperty ,
+                          owl:ObjectProperty ;
+                 
+                 rdfs:range :Plant ;
+                 
+                 rdfs:domain :WayOfCare ;
+                 
+                 owl:inverseOf :needsCare .
+
+
+
 ###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateSuitableFor
 
 :climateSuitableFor rdf:type owl:AsymmetricProperty ,
@@ -51,6 +64,17 @@
          rdfs:range :FruitPlant ;
          
          owl:inverseOf :bearsFriut .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#needsCare
+
+:needsCare rdf:type owl:AsymmetricProperty ,
+                    owl:ObjectProperty ;
+           
+           rdfs:domain :Plant ;
+           
+           rdfs:range :WayOfCare .
 
 
 
@@ -198,6 +222,26 @@
 
 
 
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#wateringFrequency
+
+:wateringFrequency rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :Watering ;
+                   
+                   rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#wateringIntensivity
+
+:wateringIntensivity rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:domain :Watering ;
+                     
+                     rdfs:range xsd:string .
+
+
+
 
 
 #################################################################
@@ -323,6 +367,34 @@
       
       rdfs:label "Soil"@en ,
                  "Почва"@ru .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Transplant
+
+:Transplant rdf:type owl:Class ;
+            
+            rdfs:label "Пересадка"@ru ;
+            
+            rdfs:subClassOf :WayOfCare .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Watering
+
+:Watering rdf:type owl:Class ;
+          
+          rdfs:label "Полив"@ru ;
+          
+          rdfs:subClassOf :WayOfCare .
+
+
+
+###  http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#WayOfCare
+
+:WayOfCare rdf:type owl:Class ;
+           
+           rdfs:label "Способ ухода"@ru .
 
 
 
