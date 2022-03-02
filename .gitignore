@@ -1,3 +1,5 @@
 __pycache__
 scrapy-env
 scrapy-env/*
+Parser/Tomita_test
+Parser/tomita-parser-master

@@ -1,0 +1,18 @@
+import "base.proto";
+import "articles_base.proto";
+
+message Fact: NFactType.TFact
+{
+    required string Field1 = 1;
+}
+
+message Address: NFactType.TFact
+{
+    required string StreetName = 1;
+    optional string Descr = 2;
+}
+
+message Org: NFactType.TFact
+{
+    required string Name = 1;
+}

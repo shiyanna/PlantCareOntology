@@ -1,0 +1,30 @@
+encoding "utf8";
+
+import "base.proto";
+import "articles_base.proto";
+
+import "fact_types.proto";
+
+import "kwtypes.proto";
+
+import "surnames.gzt";
+
+TAuxDicArticle "first_g"
+{
+    key = {"tomita:first_grammar.cxx" type=CUSTOM}
+}
+
+TAuxDicArticle "address"
+{
+    key = {"tomita:address.cxx" type=CUSTOM}
+}
+
+TAuxDicArticle "imeni"
+{
+    key = {"tomita:imeni.cxx" type=CUSTOM}
+}
+
+TAuxDicArticle "org"
+{
+    key = {"tomita:org.cxx" type=CUSTOM}
+}
