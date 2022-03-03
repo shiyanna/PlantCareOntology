@@ -1,18 +1,15 @@
 import "base.proto";
 import "articles_base.proto";
 
-message Fact: NFactType.TFact
+message Temp: NFactType.TFact
 {
-    required string Field1 = 1;
+    optional string Singular = 1;
+    optional string Min = 2;
+    optional string Max = 3;
 }
 
-message Address: NFactType.TFact
+message Number: NFactType.TFact
 {
-    required string StreetName = 1;
-    optional string Descr = 2;
-}
-
-message Org: NFactType.TFact
-{
-    required string Name = 1;
+    optional string Text1 = 1;
+    optional string Text2 = 2;
 }
