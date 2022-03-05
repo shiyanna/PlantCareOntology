@@ -1,7 +1,7 @@
 import jsonlines as jl
 import re
 
-from Parser.Yargy.process_care import process_care
+from Parser.Yargy.process_care import process_care, process_flower
 
 file = 'Crawlers\collector\collector\plantopedia.jl'
 file_out = 'Crawlers\collector\collector\plantopedia_out.jl'
@@ -13,10 +13,13 @@ re_duplicate_spaces = re.compile('\s\s+')
 re_word_combination = re.compile('[\w\(][\w\s\-\(\)]*[\w\)]')
 
 re_care = re.compile('Уход .*')
+re_sorts = re.compile('Виды и сорта .*')
 
 with jl.open(file) as input:
     with jl.open(file_out, mode='w') as output:
         for item in input:
+            ar_flowers = []
+            
             # print(item['header'])
             new = dict()
             new['header'] = item['header']
@@ -53,7 +56,19 @@ with jl.open(file) as input:
                     if len(parsed_data)>0:
                         for index in parsed_data[0]:
                             new[label+index] = parsed_data[0][index]
+                            
+                if el=='description' or re_sorts.match(el):
+                    parsed_data = process_flower(_txt)
+                    
+                    if len(parsed_data)>0:
+                        for _data in parsed_data:
+                            ar_flowers.append(_data)
+                            
+            label = 'Flowers'
+            new[label] = ar_flowers
+                            
                 
             output.write(new)
             
             
+print("ended")
