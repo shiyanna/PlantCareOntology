@@ -1,10 +1,23 @@
 import jsonlines as jl
 import re
+# from googletrans import Translator
+import six
+import translators as ts
 
-file = 'Crawlers\collector\collector\plantopedia_out.jl'
-file_out = 'Crawlers\collector\collector\plantopedia_out2.jl'
+
+def translate(text):
+    result = ts.google(text, to_language='en')
+    return result
+
+file = 'Crawlers\collector\collector\iplants.jl'
+file_out = 'Crawlers\collector\collector\iplants_out.jl'
 
 re_names = re.compile('([^\(\)]*)\s\(([^\(\)]*)\)')
+re_rus = re.compile('[а-яА-ЯёЁ\,\s]+')
+re_trailing = re.compile('[\s:\,\.]+$')
+
+# translator = Translator(service_urls=['translate.googleapis.com'])
+# translator = Translator()
 
 with jl.open(file) as input:
     with jl.open(file_out, mode='w') as output:
@@ -12,31 +25,14 @@ with jl.open(file) as input:
             
             new = dict()
             for el in item:
-                if el == 'header':
-                    txt = item[el]
-                    _re_result = re_names.findall(txt) 
-                    header_ru = _re_result[0][0]
-                    header_en = _re_result[0][1]
-                    new['header'] = header_en
-                    new['header_ru'] = header_ru
-                    
-                    continue
-                # rename to eng
-                if el == 'Форма декоративности':          
-                    new['decoration_property'] = item[el]
-                    continue
-                if el == 'Высота':
-                    new['height'] = item[el]
-                    continue
-                if el == 'Значимость в композиции':
-                    new['significance_in_composition'] = item[el]
-                    continue
-                if el == 'Устойчивость в срезке':
-                    new['shear_stability'] = item[el]
-                    continue
+                el_new = re_trailing.sub('', el)
                 
-                
-                new[el.lower()] = item[el]
+                if re_rus.match(el_new):
+                    # result = translator.translate(el_new, src='ru', dest='en')
+                    result = translate(el_new)
+                    new[result.lower()] = item[el]
+                else:
+                    new[el.lower()] = item[el]
                 
             output.write(new)
             
