@@ -1,7 +1,7 @@
 import jsonlines as jl
 import re
 
-from Parser.Yargy.process_care import process_care, process_flower
+from Parser.Yargy.process_lang import process_temperature, process_flower
 
 file = 'Crawlers\collector\collector\plantopedia.jl'
 file_out = 'Crawlers\collector\collector\plantopedia_out.jl'
@@ -51,7 +51,7 @@ with jl.open(file) as input:
                 
                 if re_care.match(el):
                     label = 'Temperature_'
-                    parsed_data = process_care(_txt)
+                    parsed_data = process_temperature(_txt)
                     
                     if len(parsed_data)>0:
                         for index in parsed_data[0]:
