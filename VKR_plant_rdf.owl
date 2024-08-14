@@ -1,0 +1,1098 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#"
+     xml:base="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:plants="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#acidity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#acidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FlowerPlant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FlowerPlant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FlowerPlant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#floweringPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#floweringPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FlowerPlant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FruitPlant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FruitPlant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitingPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitingPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FruitPlant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heght_of_plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heght_of_plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Height"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#isSick -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#isSick">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+        <rdfs:label xml:lang="en">isSick</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#member_of_family -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#member_of_family">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#partOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FlowerPlant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FruitPlant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Лист"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#preferClimate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#preferClimate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#preferSoil -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#preferSoil">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#acidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#acidity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerColor">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#flowerSize"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#floweringPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#floweringPeriod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitSize"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitingPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#fruitingPeriod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heightDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heightDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Height"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heightMeasurement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heightMeasurement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heightDescription"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Height"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#illProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#illProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#leafProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#leafProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Лист"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#light -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#light">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#maxHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#maxHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heightDescription"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Height"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#maxTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#maxTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#minHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#minHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#heightDescription"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Height"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#minTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#minTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#plantProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#singularTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#singularTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#climateProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#soilProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#treatment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#treatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#illProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Вид -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Вид">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Длина -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Длина">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#leafProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Лист"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Пересадка -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Пересадка">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Размножение -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Размножение">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Форма -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Форма">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#leafProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Цвет -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Цвет">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#leafProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Лист"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#maxHeight"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Clay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Clay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+        <rdfs:label xml:lang="en">Clay soil</rdfs:label>
+        <rdfs:label xml:lang="ru">Глинистая почва</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Climate">
+        <rdfs:comment xml:lang="ru">Климатические условия (температура, освещенность, влажность)</rdfs:comment>
+        <rdfs:label xml:lang="en">Climate</rdfs:label>
+        <rdfs:label xml:lang="ru">Климат
+</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family">
+        <rdfs:label xml:lang="en">Family</rdfs:label>
+        <rdfs:label xml:lang="ru">Семейство</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FlowerPlant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FlowerPlant">
+        <rdfs:label xml:lang="en">Flower</rdfs:label>
+        <rdfs:label xml:lang="ru">Цветок</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FruitPlant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#FruitPlant">
+        <rdfs:label xml:lang="en">Fruit</rdfs:label>
+        <rdfs:label xml:lang="ru">Плод</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gravel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gravel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+        <rdfs:label xml:lang="en">Gravel soil</rdfs:label>
+        <rdfs:label xml:lang="ru">Гравийная почва</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Height -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Height">
+        <rdfs:comment xml:lang="ru">Высота растения в сантиметрах</rdfs:comment>
+        <rdfs:label xml:lang="en">Height</rdfs:label>
+        <rdfs:label xml:lang="ru">Высота</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Organic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Organic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+        <rdfs:label xml:lang="en">Organic soil</rdfs:label>
+        <rdfs:label xml:lang="ru">Органическая почва</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant">
+        <rdfs:label xml:lang="en">Plant</rdfs:label>
+        <rdfs:label xml:lang="ru">Растение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Sand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Sand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+        <rdfs:label xml:lang="en">Sandy soil</rdfs:label>
+        <rdfs:label xml:lang="ru">Песчанная почва</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season">
+        <rdfs:label xml:lang="en">Season</rdfs:label>
+        <rdfs:label xml:lang="ru">Сезон</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Silt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Silt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil"/>
+        <rdfs:comment xml:lang="ru">Алеврит - рыхлая мелкообломочная осадочная порода.</rdfs:comment>
+        <rdfs:label xml:lang="en">Silt soil</rdfs:label>
+        <rdfs:label xml:lang="ru">Алевритовая почва</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Soil">
+        <rdfs:label xml:lang="en">Soil</rdfs:label>
+        <rdfs:label xml:lang="ru">Почва</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь">
+        <rdfs:label xml:lang="en">Ill</rdfs:label>
+        <rdfs:label xml:lang="ru">Болезнь</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Лист -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Лист">
+        <rdfs:label xml:lang="en">Leaf</rdfs:label>
+        <rdfs:label xml:lang="ru">Лист</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Alternaria_solani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Alternaria_solani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Autumn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Autumn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season"/>
+        <rdfs:label xml:lang="en">Autumn</rdfs:label>
+        <rdfs:label xml:lang="ru">Осень</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Botryosphaeria_obtusa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Botryosphaeria_obtusa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Candidatus_Liberibacter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Candidatus_Liberibacter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Capsicum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Capsicum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Xanthomonas_campestris"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanaceae"/>
+        <rdfs:label xml:lang="la">Capsicum</rdfs:label>
+        <rdfs:label xml:lang="ru">Перец</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cerasus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cerasus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Podosphaera_spp"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rosaceae"/>
+        <rdfs:label xml:lang="la">Cerasus</rdfs:label>
+        <rdfs:label xml:lang="ru">Вишня</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cercospora_zeae-maydis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cercospora_zeae-maydis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Citrus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Citrus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Candidatus_Liberibacter"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rutaceae"/>
+        <rdfs:label xml:lang="la">Citrus</rdfs:label>
+        <rdfs:label xml:lang="ru">Апельсин</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Corynespora_cassiicola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Corynespora_cassiicola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cucurbita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cucurbita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Erysiphe_cichoracearum"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cucurbitaceae"/>
+        <rdfs:label xml:lang="la">Cucurbita</rdfs:label>
+        <rdfs:label xml:lang="ru">Тыква</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cucurbitaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cucurbitaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Cucurbitaceae</rdfs:label>
+        <rdfs:label xml:lang="ru">Ты́квенные</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Diplocarpon_earlianum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Diplocarpon_earlianum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Ericaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Ericaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Ericaceae</rdfs:label>
+        <rdfs:label xml:lang="ru">Вересковые</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Erysiphe_cichoracearum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Erysiphe_cichoracearum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+        <rdfs:label xml:lang="la">Erysiphe cichoracearum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Exserohilum_turcicum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Exserohilum_turcicum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fabaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fabaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Fabaceae</rdfs:label>
+        <rdfs:label xml:lang="ru">Бобовые</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fragaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fragaria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Diplocarpon_earlianum"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rosaceae"/>
+        <rdfs:label xml:lang="la">Fragaria</rdfs:label>
+        <rdfs:label xml:lang="ru">Земляника</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fulvia_fulva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fulvia_fulva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Glycine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Glycine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fabaceae"/>
+        <rdfs:label xml:lang="la">Glycine</rdfs:label>
+        <rdfs:label xml:lang="ru">Соя</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gramineae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gramineae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Gramineae</rdfs:label>
+        <rdfs:label xml:lang="ru">Злаки</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Guignardia_bidwellii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Guignardia_bidwellii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gymnosporangium_juniperi-virginianae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gymnosporangium_juniperi-virginianae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Malus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Malus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Botryosphaeria_obtusa"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gymnosporangium_juniperi-virginianae"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Venturia_inaequalis"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rosaceae"/>
+        <rdfs:label xml:lang="la">Malus</rdfs:label>
+        <rdfs:label xml:lang="ru">Яблоня</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Phaeoacremonium_spp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Phaeoacremonium_spp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Phytophthora_infestans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Phytophthora_infestans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Poaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Poaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Poaceae</rdfs:label>
+        <rdfs:label xml:lang="la">Мятликовые</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Podosphaera_spp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Podosphaera_spp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Prunus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Prunus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Xanthomonas_campestris"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rosaceae"/>
+        <rdfs:label xml:lang="la">Prunus</rdfs:label>
+        <rdfs:label xml:lang="ru">Персик</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Pseudocercospora_vitis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Pseudocercospora_vitis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Puccinia_sorghi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Puccinia_sorghi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rosaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rosaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Rosaceae</rdfs:label>
+        <rdfs:label xml:lang="ru">Розовые</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rubus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rubus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rosaceae"/>
+        <rdfs:label xml:lang="la">Rubus</rdfs:label>
+        <rdfs:label xml:lang="ru">Малина</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rutaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Rutaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Rutaceae</rdfs:label>
+        <rdfs:label xml:lang="ru">Рутовые</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Septoria_lycopersici -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Septoria_lycopersici">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Solanaceae</rdfs:label>
+        <rdfs:label xml:lang="ru">Паслёновые</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Alternaria_solani"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Phytophthora_infestans"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanaceae"/>
+        <rdfs:label xml:lang="la">Solanum</rdfs:label>
+        <rdfs:label xml:lang="ru">Картофель</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanum_lycopersicum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanum_lycopersicum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Alternaria_solani"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Corynespora_cassiicola"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Fulvia_fulva"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Phytophthora_infestans"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Septoria_lycopersici"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tetranychus_urticae"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tomato_mosaic_virus"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tomato_yellow_leaf_curl_virus"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Xanthomonas_vesicatoria"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Solanaceae"/>
+        <rdfs:label xml:lang="la">Solanum lycopersicum</rdfs:label>
+        <rdfs:label xml:lang="ru">Томат</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Spring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Spring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season"/>
+        <rdfs:label xml:lang="en">Spring</rdfs:label>
+        <rdfs:label xml:lang="ru">Весна</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Summer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Summer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season"/>
+        <rdfs:label xml:lang="en">Summer</rdfs:label>
+        <rdfs:label xml:lang="ru">Лето</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tetranychus_urticae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tetranychus_urticae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tomato_mosaic_virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tomato_mosaic_virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tomato_yellow_leaf_curl_virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Tomato_yellow_leaf_curl_virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Vaccinium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Vaccinium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Ericaceae"/>
+        <rdfs:label xml:lang="la">Vaccinium</rdfs:label>
+        <rdfs:label xml:lang="ru">Черника</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Venturia_inaequalis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Venturia_inaequalis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Vitaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Vitaceae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Family"/>
+        <rdfs:label xml:lang="la">Vitaceae</rdfs:label>
+        <rdfs:label xml:lang="ru">Виноградовые</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Vítis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Vítis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Guignardia_bidwellii"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Phaeoacremonium_spp"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Pseudocercospora_vitis"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Vitaceae"/>
+        <rdfs:label xml:lang="la">Vítis</rdfs:label>
+        <rdfs:label xml:lang="ru">Виноград</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Winter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Winter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Season"/>
+        <rdfs:label xml:lang="en">Winter</rdfs:label>
+        <rdfs:label xml:lang="ru">Зима</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Xanthomonas_campestris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Xanthomonas_campestris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Xanthomonas_vesicatoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Xanthomonas_vesicatoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Болезнь"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Zea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Zea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Plant"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Cercospora_zeae-maydis"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Exserohilum_turcicum"/>
+        <isSick rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Puccinia_sorghi"/>
+        <member_of_family rdf:resource="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#Gramineae"/>
+        <rdfs:label xml:lang="la">Zea mays</rdfs:label>
+        <rdfs:label xml:lang="ru">Кукуруза</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/yuri/ontologies/2022/1/plants-2#floweringPeriod">
+        <rdfs:comment xml:lang="ru">Месяцы цветения</rdfs:comment>
+        <rdfs:label xml:lang="en">floweringPeriod</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

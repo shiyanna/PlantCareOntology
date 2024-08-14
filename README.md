@@ -1,9 +1,6 @@
 # Plant Care Ontology
 
-This ontology is study task.
-
-It should contain information about plants such as taxonomy, preferred soil and preferred climate.
-It could also contain other information about plants or things related to plants.
+This ontology will contain information about plants and their diseases.
 
 ## Data sources
 
@@ -16,3 +13,9 @@ It could also contain other information about plants or things related to plants
 |5|[floralife](https://floralife.com.ua/)|ru|
 |6|[zakupator](https://zakupator.com/)|ru|
 |7|[iplants](https://iplants.ru/)|ru|
+
+Other sources:
+https://browser.planteome.org/amigo
+https://www.wikidata.org
+https://tree.opentreeoflife.org/
+
