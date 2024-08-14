@@ -15,7 +15,7 @@ This ontology will contain information about plants and their diseases.
 |7|[iplants](https://iplants.ru/)|ru|
 
 Other sources:
-https://browser.planteome.org/amigo
-https://www.wikidata.org
-https://tree.opentreeoflife.org/
+* [Wikidata](https://www.wikidata.org)
+* [Planteome](https://browser.planteome.org)
+* [Open Tree of Life](https://tree.opentreeoflife.org)
 
